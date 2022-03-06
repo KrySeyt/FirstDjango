@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['firstdjango2134.herokuapp.com',
                  'cybersport.social',
                  'localhost',
+                 '127.0.0.1',
                  ]
 
 
