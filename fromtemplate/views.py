@@ -2,7 +2,10 @@ from django.shortcuts import render
 
 
 def show_main_page(request):
-    return render(request, 'fromtemplate/Главная.html')
+    data = {
+        'count': range(5),
+    }
+    return render(request, 'fromtemplate/Главная.html', context=data)
 
 
 def show_contacts(request):
@@ -14,5 +17,4 @@ def show_index(request):
 
 
 def show_about_us(request):
-
     return render(request, 'fromtemplate/О-нас.html')
